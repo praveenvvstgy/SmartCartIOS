@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A15F830CBDE2B28A69039F0 /* Pods_Smart_ShoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C6C700C8D3E89819082539 /* Pods_Smart_ShoppingTests.framework */; };
+		B420FF8C1D01DF9D00DE1C29 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF8B1D01DF9D00DE1C29 /* BaseItem.swift */; };
+		B420FF901D01E09600DE1C29 /* WalmartAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF8F1D01E09600DE1C29 /* WalmartAPI.swift */; };
+		B420FF921D01EA7E00DE1C29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */; };
+		B420FF941D01EC9800DE1C29 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF931D01EC9800DE1C29 /* SearchTableCell.swift */; };
+		B420FF9A1D02350A00DE1C29 /* ProductsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF991D02350A00DE1C29 /* ProductsCache.swift */; };
+		B420FF9C1D029A5E00DE1C29 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF9B1D029A5E00DE1C29 /* ProductCell.swift */; };
+		B420FFA01D02AEED00DE1C29 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF9F1D02AEED00DE1C29 /* ShoppingList.swift */; };
+		B420FFA21D02CEEE00DE1C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B420FFA11D02CEEE00DE1C29 /* Main.storyboard */; };
+		B420FFA91D042E3A00DE1C29 /* SmartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */; };
+		B420FFAB1D04506600DE1C29 /* SmartCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FFAA1D04506600DE1C29 /* SmartCart.swift */; };
+		B42667D91CF6AC6A00D21489 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42667D81CF6AC6A00D21489 /* CustomUITableViewCell.swift */; };
+		B49E807B1CF1A3580055E130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E807A1CF1A3580055E130 /* AppDelegate.swift */; };
+		B49E807D1CF1A3580055E130 /* SmartCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */; };
+		B49E80821CF1A3580055E130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49E80811CF1A3580055E130 /* Assets.xcassets */; };
+		B49E80851CF1A3580055E130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */; };
+		B49E80901CF1A3580055E130 /* Smart_ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */; };
+		B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */; };
+		DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B49E808C1CF1A3580055E130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49E806F1CF1A3580055E130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49E80761CF1A3580055E130;
+			remoteInfo = "Smart Shopping";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D764B9943563AC2F1EE206 /* Pods-Smart Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping.release.xcconfig"; sourceTree = "<group>"; };
+		0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C6C700C8D3E89819082539 /* Pods_Smart_ShoppingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_ShoppingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A76AF667FBD3C0A41CCD69C /* Pods-Smart ShoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart ShoppingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		904953396E75BE0573F0D676 /* Pods-Smart ShoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart ShoppingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B420FF8B1D01DF9D00DE1C29 /* BaseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
+		B420FF8F1D01E09600DE1C29 /* WalmartAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartAPI.swift; sourceTree = "<group>"; };
+		B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B420FF931D01EC9800DE1C29 /* SearchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		B420FF991D02350A00DE1C29 /* ProductsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsCache.swift; sourceTree = "<group>"; };
+		B420FF9B1D029A5E00DE1C29 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		B420FF9F1D02AEED00DE1C29 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		B420FFA11D02CEEE00DE1C29 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartListViewController.swift; sourceTree = "<group>"; };
+		B420FFAA1D04506600DE1C29 /* SmartCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartCart.swift; sourceTree = "<group>"; };
+		B42667D81CF6AC6A00D21489 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
+		B49E80771CF1A3580055E130 /* Smart Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49E807A1CF1A3580055E130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCartViewController.swift; sourceTree = "<group>"; };
+		B49E80811CF1A3580055E130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49E80841CF1A3580055E130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B49E80861CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart ShoppingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ShoppingTests.swift; sourceTree = "<group>"; };
+		B49E80911CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCB2E824D2730D990C9499D1 /* Pods-Smart Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B49E80741CF1A3580055E130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49E80881CF1A3580055E130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A15F830CBDE2B28A69039F0 /* Pods_Smart_ShoppingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF473C9EF279083872430412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */,
+				28C6C700C8D3E89819082539 /* Pods_Smart_ShoppingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B420FF881D01DF2300DE1C29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B420FF8B1D01DF9D00DE1C29 /* BaseItem.swift */,
+				B420FF991D02350A00DE1C29 /* ProductsCache.swift */,
+				B420FF9F1D02AEED00DE1C29 /* ShoppingList.swift */,
+				B420FFAA1D04506600DE1C29 /* SmartCart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B420FF891D01DF2900DE1C29 /* Vjews */ = {
+			isa = PBXGroup;
+			children = (
+				B420FFA11D02CEEE00DE1C29 /* Main.storyboard */,
+				B420FF931D01EC9800DE1C29 /* SearchTableCell.swift */,
+				B420FF9B1D029A5E00DE1C29 /* ProductCell.swift */,
+			);
+			name = Vjews;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B420FF8A1D01DF2F00DE1C29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */,
+				B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */,
+				B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B420FF8D1D01E06300DE1C29 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B49E807A1CF1A3580055E130 /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B420FF8E1D01E07B00DE1C29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B420FF8F1D01E09600DE1C29 /* WalmartAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B420FFA31D0324B100DE1C29 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B49E806E1CF1A3580055E130 = {
+			isa = PBXGroup;
+			children = (
+				B49E80791CF1A3580055E130 /* Smart Shopping */,
+				B49E808E1CF1A3580055E130 /* Smart ShoppingTests */,
+				B49E80781CF1A3580055E130 /* Products */,
+				C3A28B088F6369186B0BF731 /* Pods */,
+				AF473C9EF279083872430412 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B49E80781CF1A3580055E130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B49E80771CF1A3580055E130 /* Smart Shopping.app */,
+				B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B49E80791CF1A3580055E130 /* Smart Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				B420FFA31D0324B100DE1C29 /* Helpers */,
+				B420FF8E1D01E07B00DE1C29 /* Services */,
+				B420FF8D1D01E06300DE1C29 /* Other */,
+				B420FF8A1D01DF2F00DE1C29 /* Controllers */,
+				B420FF891D01DF2900DE1C29 /* Vjews */,
+				B420FF881D01DF2300DE1C29 /* Models */,
+				B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */,
+				B42667D81CF6AC6A00D21489 /* CustomUITableViewCell.swift */,
+				B49E80811CF1A3580055E130 /* Assets.xcassets */,
+				B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */,
+				B49E80861CF1A3580055E130 /* Info.plist */,
+			);
+			path = "Smart Shopping";
+			sourceTree = "<group>";
+		};
+		B49E808E1CF1A3580055E130 /* Smart ShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */,
+				B49E80911CF1A3580055E130 /* Info.plist */,
+			);
+			path = "Smart ShoppingTests";
+			sourceTree = "<group>";
+		};
+		C3A28B088F6369186B0BF731 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2E824D2730D990C9499D1 /* Pods-Smart Shopping.debug.xcconfig */,
+				02D764B9943563AC2F1EE206 /* Pods-Smart Shopping.release.xcconfig */,
+				904953396E75BE0573F0D676 /* Pods-Smart ShoppingTests.debug.xcconfig */,
+				6A76AF667FBD3C0A41CCD69C /* Pods-Smart ShoppingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B49E80761CF1A3580055E130 /* Smart Shopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49E80941CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart Shopping" */;
+			buildPhases = (
+				BED0CF8D79064CEA1D725E20 /* [CP] Check Pods Manifest.lock */,
+				B49E80731CF1A3580055E130 /* Sources */,
+				B49E80741CF1A3580055E130 /* Frameworks */,
+				B49E80751CF1A3580055E130 /* Resources */,
+				DD7204973EA773E4821E72EF /* [CP] Embed Pods Frameworks */,
+				0A1EE90781C049EE2B9AC7FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Shopping";
+			productName = "Smart Shopping";
+			productReference = B49E80771CF1A3580055E130 /* Smart Shopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49E808A1CF1A3580055E130 /* Smart ShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49E80971CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart ShoppingTests" */;
+			buildPhases = (
+				46D8FEB0F1AC8514D68854E2 /* [CP] Check Pods Manifest.lock */,
+				B49E80871CF1A3580055E130 /* Sources */,
+				B49E80881CF1A3580055E130 /* Frameworks */,
+				B49E80891CF1A3580055E130 /* Resources */,
+				3AF26FAEE56B3D1C6FB46D53 /* [CP] Embed Pods Frameworks */,
+				60C80BC11C0E7348C2E34E5D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49E808D1CF1A3580055E130 /* PBXTargetDependency */,
+			);
+			name = "Smart ShoppingTests";
+			productName = "Smart ShoppingTests";
+			productReference = B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B49E806F1CF1A3580055E130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gowda I V, Praveen";
+				TargetAttributes = {
+					B49E80761CF1A3580055E130 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B49E808A1CF1A3580055E130 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B49E80761CF1A3580055E130;
+					};
+				};
+			};
+			buildConfigurationList = B49E80721CF1A3580055E130 /* Build configuration list for PBXProject "Smart Shopping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B49E806E1CF1A3580055E130;
+			productRefGroup = B49E80781CF1A3580055E130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49E80761CF1A3580055E130 /* Smart Shopping */,
+				B49E808A1CF1A3580055E130 /* Smart ShoppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B49E80751CF1A3580055E130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E80851CF1A3580055E130 /* LaunchScreen.storyboard in Resources */,
+				B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */,
+				B420FFA21D02CEEE00DE1C29 /* Main.storyboard in Resources */,
+				B49E80821CF1A3580055E130 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49E80891CF1A3580055E130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A1EE90781C049EE2B9AC7FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AF26FAEE56B3D1C6FB46D53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D8FEB0F1AC8514D68854E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60C80BC11C0E7348C2E34E5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED0CF8D79064CEA1D725E20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD7204973EA773E4821E72EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B49E80731CF1A3580055E130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B420FF921D01EA7E00DE1C29 /* SearchViewController.swift in Sources */,
+				B49E807D1CF1A3580055E130 /* SmartCartViewController.swift in Sources */,
+				B420FFA91D042E3A00DE1C29 /* SmartListViewController.swift in Sources */,
+				B420FF9C1D029A5E00DE1C29 /* ProductCell.swift in Sources */,
+				B420FFA01D02AEED00DE1C29 /* ShoppingList.swift in Sources */,
+				B49E807B1CF1A3580055E130 /* AppDelegate.swift in Sources */,
+				B420FF941D01EC9800DE1C29 /* SearchTableCell.swift in Sources */,
+				B420FFAB1D04506600DE1C29 /* SmartCart.swift in Sources */,
+				B42667D91CF6AC6A00D21489 /* CustomUITableViewCell.swift in Sources */,
+				B420FF8C1D01DF9D00DE1C29 /* BaseItem.swift in Sources */,
+				B420FF9A1D02350A00DE1C29 /* ProductsCache.swift in Sources */,
+				B420FF901D01E09600DE1C29 /* WalmartAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49E80871CF1A3580055E130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E80901CF1A3580055E130 /* Smart_ShoppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49E808D1CF1A3580055E130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49E80761CF1A3580055E130 /* Smart Shopping */;
+			targetProxy = B49E808C1CF1A3580055E130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49E80841CF1A3580055E130 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B49E80921CF1A3580055E130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B49E80931CF1A3580055E130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B49E80951CF1A3580055E130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB2E824D2730D990C9499D1 /* Pods-Smart Shopping.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Shopping/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-Shopping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B49E80961CF1A3580055E130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D764B9943563AC2F1EE206 /* Pods-Smart Shopping.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Shopping/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-Shopping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B49E80981CF1A3580055E130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904953396E75BE0573F0D676 /* Pods-Smart ShoppingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart ShoppingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-ShoppingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Shopping.app/Smart Shopping";
+			};
+			name = Debug;
+		};
+		B49E80991CF1A3580055E130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A76AF667FBD3C0A41CCD69C /* Pods-Smart ShoppingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart ShoppingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-ShoppingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Shopping.app/Smart Shopping";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49E80721CF1A3580055E130 /* Build configuration list for PBXProject "Smart Shopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49E80921CF1A3580055E130 /* Debug */,
+				B49E80931CF1A3580055E130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49E80941CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart Shopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49E80951CF1A3580055E130 /* Debug */,
+				B49E80961CF1A3580055E130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49E80971CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart ShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49E80981CF1A3580055E130 /* Debug */,
+				B49E80991CF1A3580055E130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B49E806F1CF1A3580055E130 /* Project object */;
+}
