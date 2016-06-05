@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A15F830CBDE2B28A69039F0 /* Pods_Smart_ShoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C6C700C8D3E89819082539 /* Pods_Smart_ShoppingTests.framework */; };
 		B420FF8C1D01DF9D00DE1C29 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF8B1D01DF9D00DE1C29 /* BaseItem.swift */; };
 		B420FF901D01E09600DE1C29 /* WalmartAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF8F1D01E09600DE1C29 /* WalmartAPI.swift */; };
 		B420FF921D01EA7E00DE1C29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */; };
@@ -23,21 +22,10 @@
 		B49E807D1CF1A3580055E130 /* SmartCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */; };
 		B49E80821CF1A3580055E130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49E80811CF1A3580055E130 /* Assets.xcassets */; };
 		B49E80851CF1A3580055E130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */; };
-		B49E80901CF1A3580055E130 /* Smart_ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */; };
 		B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */; };
 		B4FBA98E1D048BD50014B174 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBA98D1D048BD50014B174 /* CheckoutController.swift */; };
 		DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B49E808C1CF1A3580055E130 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B49E806F1CF1A3580055E130 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B49E80761CF1A3580055E130;
-			remoteInfo = "Smart Shopping";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02D764B9943563AC2F1EE206 /* Pods-Smart Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +50,6 @@
 		B49E80811CF1A3580055E130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49E80841CF1A3580055E130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49E80861CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart ShoppingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ShoppingTests.swift; sourceTree = "<group>"; };
 		B49E80911CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -77,14 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49E80881CF1A3580055E130 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A15F830CBDE2B28A69039F0 /* Pods_Smart_ShoppingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				B49E80771CF1A3580055E130 /* Smart Shopping.app */,
-				B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,27 +216,6 @@
 			productReference = B49E80771CF1A3580055E130 /* Smart Shopping.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B49E808A1CF1A3580055E130 /* Smart ShoppingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B49E80971CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart ShoppingTests" */;
-			buildPhases = (
-				46D8FEB0F1AC8514D68854E2 /* [CP] Check Pods Manifest.lock */,
-				B49E80871CF1A3580055E130 /* Sources */,
-				B49E80881CF1A3580055E130 /* Frameworks */,
-				B49E80891CF1A3580055E130 /* Resources */,
-				3AF26FAEE56B3D1C6FB46D53 /* [CP] Embed Pods Frameworks */,
-				60C80BC11C0E7348C2E34E5D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B49E808D1CF1A3580055E130 /* PBXTargetDependency */,
-			);
-			name = "Smart ShoppingTests";
-			productName = "Smart ShoppingTests";
-			productReference = B49E808B1CF1A3580055E130 /* Smart ShoppingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,10 +235,6 @@
 							};
 						};
 					};
-					B49E808A1CF1A3580055E130 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = B49E80761CF1A3580055E130;
-					};
 				};
 			};
 			buildConfigurationList = B49E80721CF1A3580055E130 /* Build configuration list for PBXProject "Smart Shopping" */;
@@ -298,7 +251,6 @@
 			projectRoot = "";
 			targets = (
 				B49E80761CF1A3580055E130 /* Smart Shopping */,
-				B49E808A1CF1A3580055E130 /* Smart ShoppingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,13 +264,6 @@
 				B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */,
 				B420FFA21D02CEEE00DE1C29 /* Main.storyboard in Resources */,
 				B49E80821CF1A3580055E130 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49E80891CF1A3580055E130 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,51 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3AF26FAEE56B3D1C6FB46D53 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46D8FEB0F1AC8514D68854E2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		60C80BC11C0E7348C2E34E5D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart ShoppingTests/Pods-Smart ShoppingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BED0CF8D79064CEA1D725E20 /* [CP] Check Pods Manifest.lock */ = {
@@ -438,23 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B49E80871CF1A3580055E130 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B49E80901CF1A3580055E130 /* Smart_ShoppingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B49E808D1CF1A3580055E130 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B49E80761CF1A3580055E130 /* Smart Shopping */;
-			targetProxy = B49E808C1CF1A3580055E130 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */ = {
@@ -579,32 +463,6 @@
 			};
 			name = Release;
 		};
-		B49E80981CF1A3580055E130 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904953396E75BE0573F0D676 /* Pods-Smart ShoppingTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Smart ShoppingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-ShoppingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Shopping.app/Smart Shopping";
-			};
-			name = Debug;
-		};
-		B49E80991CF1A3580055E130 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A76AF667FBD3C0A41CCD69C /* Pods-Smart ShoppingTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Smart ShoppingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.praveengowda.app.mobi.Smart-ShoppingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Shopping.app/Smart Shopping";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,15 +480,6 @@
 			buildConfigurations = (
 				B49E80951CF1A3580055E130 /* Debug */,
 				B49E80961CF1A3580055E130 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B49E80971CF1A3580055E130 /* Build configuration list for PBXNativeTarget "Smart ShoppingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B49E80981CF1A3580055E130 /* Debug */,
-				B49E80991CF1A3580055E130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
