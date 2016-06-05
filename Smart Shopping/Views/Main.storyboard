@@ -289,6 +289,62 @@
             </objects>
             <point key="canvasLocation" x="1226" y="187"/>
         </scene>
+        <!--Checkout Controller-->
+        <scene sceneID="Cso-MB-ilO">
+            <objects>
+                <viewController id="VM9-eB-aQD" customClass="CheckoutController" customModule="Smart_Shopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ygb-up-TNe"/>
+                        <viewControllerLayoutGuide type="bottom" id="RqJ-4q-0Uj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DB9-eP-Duy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay-bg" translatesAutoresizingMaskIntoConstraints="NO" id="61G-k3-lEG">
+                                <rect key="frame" x="-8" y="-20" width="336" height="608"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3U-wl-Az4">
+                                <rect key="frame" x="16" y="78" width="288" height="86"/>
+                                <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="36k-mv-teq"/>
+                                </constraints>
+                                <state key="normal" title="Pay at Counter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eye-8w-V9N">
+                                <rect key="frame" x="16" y="188" width="288" height="86"/>
+                                <color key="backgroundColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="cPb-TH-SX7"/>
+                                </constraints>
+                                <state key="normal" title="Pay with Paypal"/>
+                                <connections>
+                                    <action selector="payWithPaypalClicked" destination="VM9-eB-aQD" eventType="touchUpInside" id="8U6-Vj-OeE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="61G-k3-lEG" secondAttribute="trailing" constant="-24" id="2Ar-aS-bDz"/>
+                            <constraint firstItem="g3U-wl-Az4" firstAttribute="leading" secondItem="DB9-eP-Duy" secondAttribute="leadingMargin" id="A9T-W3-lu2"/>
+                            <constraint firstItem="eye-8w-V9N" firstAttribute="top" secondItem="g3U-wl-Az4" secondAttribute="bottom" constant="24" id="DfM-7r-xsb"/>
+                            <constraint firstItem="RqJ-4q-0Uj" firstAttribute="top" secondItem="61G-k3-lEG" secondAttribute="bottom" constant="-84" id="FWe-Is-oda"/>
+                            <constraint firstItem="eye-8w-V9N" firstAttribute="trailing" secondItem="DB9-eP-Duy" secondAttribute="trailingMargin" id="ghR-hg-N2Z"/>
+                            <constraint firstItem="61G-k3-lEG" firstAttribute="leading" secondItem="DB9-eP-Duy" secondAttribute="leadingMargin" constant="-24" id="hF5-7u-BAj"/>
+                            <constraint firstItem="g3U-wl-Az4" firstAttribute="trailing" secondItem="DB9-eP-Duy" secondAttribute="trailingMargin" id="kME-2y-crq"/>
+                            <constraint firstItem="eye-8w-V9N" firstAttribute="leading" secondItem="DB9-eP-Duy" secondAttribute="leadingMargin" id="ohI-Qy-kJi"/>
+                            <constraint firstItem="g3U-wl-Az4" firstAttribute="top" secondItem="Ygb-up-TNe" secondAttribute="bottom" constant="78" id="p0R-zL-pyZ"/>
+                            <constraint firstItem="61G-k3-lEG" firstAttribute="top" secondItem="DB9-eP-Duy" secondAttribute="topMargin" constant="-20" id="uc9-Fm-keq"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="FWm-oE-7jw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVY-Sw-nix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="1744"/>
+        </scene>
         <!--Smart Cart-->
         <scene sceneID="KMV-3x-wrJ">
             <objects>
@@ -410,10 +466,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OjJ-xe-iQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="1615"/>
+            <point key="canvasLocation" x="1758" y="1615"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mxz-Hb-1aq">
+            <objects>
+                <navigationController storyboardIdentifier="CheckoutViewController" automaticallyAdjustsScrollViewInsets="NO" id="8ZJ-jw-2wK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="sWc-6B-Xkn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VM9-eB-aQD" kind="relationship" relationship="rootViewController" id="phW-IN-TFg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcS-nR-AaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="1744"/>
         </scene>
     </scenes>
     <resources>
         <image name="add" width="64" height="64"/>
+        <image name="pay-bg" width="890" height="593"/>
     </resources>
 </document>

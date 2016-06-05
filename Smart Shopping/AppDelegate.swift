@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FoldingTabBar
 import ChameleonFramework
+import Braintree
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         setupTabBarController()
+        BTAppSwitch.setReturnURLScheme("com.praveengowda.app.mobi.Smart-Shopping.payments")
         return true
     }
     
@@ -50,6 +52,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
         tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if url.scheme.localizedCaseInsensitiveCompare("com.praveengowda.app.mobi.Smart-Shopping.payments") == .OrderedSame {
+            return BTAppSwitch.handleOpenURL(url, sourceApplication: sourceApplication)
+        }
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {

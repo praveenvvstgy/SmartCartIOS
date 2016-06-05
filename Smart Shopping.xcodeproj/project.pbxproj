@@ -25,6 +25,7 @@
 		B49E80851CF1A3580055E130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */; };
 		B49E80901CF1A3580055E130 /* Smart_ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */; };
 		B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */; };
+		B4FBA98E1D048BD50014B174 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBA98D1D048BD50014B174 /* CheckoutController.swift */; };
 		DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ShoppingTests.swift; sourceTree = "<group>"; };
 		B49E80911CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4FBA98D1D048BD50014B174 /* CheckoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
+		B4FBA98F1D0496D50014B174 /* Smart Shopping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Smart Shopping.entitlements"; sourceTree = "<group>"; };
 		DCB2E824D2730D990C9499D1 /* Pods-Smart Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +128,7 @@
 				B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */,
 				B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */,
 				B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */,
+				B4FBA98D1D048BD50014B174 /* CheckoutController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +179,7 @@
 		B49E80791CF1A3580055E130 /* Smart Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				B4FBA98F1D0496D50014B174 /* Smart Shopping.entitlements */,
 				B420FFA31D0324B100DE1C29 /* Helpers */,
 				B420FF8E1D01E07B00DE1C29 /* Services */,
 				B420FF8D1D01E06300DE1C29 /* Other */,
@@ -266,6 +271,12 @@
 				TargetAttributes = {
 					B49E80761CF1A3580055E130 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 42K4FLWU7X;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
 					};
 					B49E808A1CF1A3580055E130 = {
 						CreatedOnToolsVersion = 7.3;
@@ -416,6 +427,7 @@
 				B420FFA91D042E3A00DE1C29 /* SmartListViewController.swift in Sources */,
 				B420FF9C1D029A5E00DE1C29 /* ProductCell.swift in Sources */,
 				B420FFA01D02AEED00DE1C29 /* ShoppingList.swift in Sources */,
+				B4FBA98E1D048BD50014B174 /* CheckoutController.swift in Sources */,
 				B49E807B1CF1A3580055E130 /* AppDelegate.swift in Sources */,
 				B420FF941D01EC9800DE1C29 /* SearchTableCell.swift in Sources */,
 				B420FFAB1D04506600DE1C29 /* SmartCart.swift in Sources */,

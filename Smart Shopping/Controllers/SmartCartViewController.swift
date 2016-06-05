@@ -142,5 +142,8 @@ extension SmartCartViewController: YALTabBarInteracting {
     
     func extraRightItemDidPress() {
         print("User Checked Out")
+        let checkoutCounter = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CheckoutViewController")
+        checkoutCounter.modalPresentationStyle = .FullScreen
+        presentViewController(checkoutCounter, animated: true, completion: nil)
     }
 }

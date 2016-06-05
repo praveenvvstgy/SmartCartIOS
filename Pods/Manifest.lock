@@ -1,4 +1,26 @@
 PODS:
+  - Braintree (4.3.1):
+    - Braintree/Card (= 4.3.1)
+    - Braintree/Core (= 4.3.1)
+    - Braintree/PayPal (= 4.3.1)
+    - Braintree/UI (= 4.3.1)
+  - Braintree/Card (4.3.1):
+    - Braintree/Core
+  - Braintree/Core (4.3.1)
+  - Braintree/PayPal (4.3.1):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.3.1):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.3.1):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.3.1)
+  - Braintree/UI (4.3.1):
+    - Braintree/Card
+    - Braintree/Core
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -33,6 +55,7 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Braintree
   - ChameleonFramework/Swift
   - DZNEmptyDataSet
   - Firebase
@@ -43,6 +66,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Braintree: 817c38f759315a6aaa0c5884dc9f1969a61f802f
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Firebase: 6c80ac28d59d06bfd9152a7b6ea17625ca93183d
@@ -57,6 +81,6 @@ SPEC CHECKSUMS:
   SwiftGifOrigin: 893ebcceabe215a00b607328b5322b4e228347e5
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 196219f149ae5c95bf34379300f14d923fa3d106
+PODFILE CHECKSUM: a8b974287b78ce3d94e3bf43370da3120ad75c3c
 
 COCOAPODS: 1.0.1

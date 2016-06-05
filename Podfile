@@ -14,6 +14,7 @@ target 'Smart Shopping' do
   pod 'DZNEmptyDataSet'
   pod 'FoldingTabBar', '~> 1.0.2'
   pod 'SwiftGifOrigin'
+  pod 'Braintree'
   
   target 'Smart ShoppingTests' do
     inherit! :search_paths
