@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FoldingTabBar
 
 class SmartCartViewController: UIViewController {
 
@@ -26,6 +27,14 @@ class SmartCartViewController: UIViewController {
         loadCartContents()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(loadCartContents), name: "cartRefreshed", object: nil)
+        databaseRef.child("carts").child("cart1").child("activeUser").observeEventType(.ChildAdded, withBlock: {
+            (snapshot) in
+            if snapshot.key == "user1" {
+                self.cartStatusIndicator.text = "🎾 Connected to Cart#1"
+            } else {
+                self.cartStatusIndicator.text = "🔴 Not Connected to Cart"
+            }
+        })
     }
     
     deinit {
@@ -122,5 +131,16 @@ extension SmartCartViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100
+    }
+}
+
+//MARK: YALTabBarInteracting
+extension SmartCartViewController: YALTabBarInteracting {
+    func extraLeftItemDidPress() {
+        
+    }
+    
+    func extraRightItemDidPress() {
+        print("User Checked Out")
     }
 }

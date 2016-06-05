@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let listItem = YALTabBarItem(itemImage: UIImage(named: "list"), leftItemImage: nil, rightItemImage: nil)
         tabBarController.leftBarItems = [searchItem, listItem]
         
-        let cartItem = YALTabBarItem(itemImage: UIImage(named: "cart"), leftItemImage: nil, rightItemImage: nil)
+        let cartItem = YALTabBarItem(itemImage: UIImage(named: "cart"), leftItemImage: UIImage(named: "recommend"), rightItemImage: UIImage(named: "checkout"))
         tabBarController.rightBarItems = [cartItem]
         
         tabBarController.centerButtonImage = UIImage(named: "menu")
@@ -47,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight
         tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets
         tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets
+        
+        tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
+        tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset
     }
 
     func applicationWillResignActive(application: UIApplication) {
