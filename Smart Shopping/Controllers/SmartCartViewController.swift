@@ -74,6 +74,16 @@ class SmartCartViewController: UIViewController {
         }
 
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showProduct" {
+            if let destinationViewController = segue.destinationViewController as? ProductDetailViewController {
+                if let cell = sender as? UITableViewCell, let indexPath = cartTable.indexPathForCell(cell) {
+                    destinationViewController.product = cartContents[indexPath.row]
+                }
+            }
+        }
+    }
 
 }
 

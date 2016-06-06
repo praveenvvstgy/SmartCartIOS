@@ -586,6 +586,7 @@
                                             <outlet property="foregroundPriceLabel" destination="uqg-LA-2VN" id="MP7-W8-ixy"/>
                                             <outlet property="foregroundThumbnail" destination="4lG-Ja-ysD" id="zy3-nJ-eTm"/>
                                             <outlet property="foregroundTitleLabel" destination="3tv-tg-sZa" id="xA5-wC-4KX"/>
+                                            <segue destination="P8C-gV-gcz" kind="modal" identifier="showProduct" id="dfe-DN-Ria"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -647,4 +648,7 @@
         <image name="close" width="20" height="20"/>
         <image name="pay-bg" width="890" height="593"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dfe-DN-Ria"/>
+    </inferredMetricsTieBreakers>
 </document>

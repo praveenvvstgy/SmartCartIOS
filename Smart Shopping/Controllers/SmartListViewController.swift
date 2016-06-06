@@ -59,6 +59,16 @@ class SmartListViewController: UIViewController {
             smartListTable.reloadData()
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showProduct" {
+            if let destinationViewController = segue.destinationViewController as? ProductDetailViewController {
+                if let cell = sender as? UITableViewCell, let indexPath = smartListTable.indexPathForCell(cell) {
+                    destinationViewController.product = localSmartListItems[indexPath.row]
+                }
+            }
+        }
+    }
 }
 
 //MARK: UITableViewDataSource
@@ -100,16 +110,6 @@ extension SmartListViewController: UITableViewDataSource {
         }
         
         return cell
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showProduct" {
-            if let destinationViewController = segue.destinationViewController as? ProductDetailViewController {
-                if let cell = sender as? UITableViewCell, let indexPath = smartListTable.indexPathForCell(cell) {
-                    destinationViewController.product = localSmartListItems[indexPath.row]
-                }
-            }
-        }
     }
 }
 
