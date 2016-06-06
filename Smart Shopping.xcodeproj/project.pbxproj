@@ -18,11 +18,14 @@
 		B420FFA91D042E3A00DE1C29 /* SmartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */; };
 		B420FFAB1D04506600DE1C29 /* SmartCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B420FFAA1D04506600DE1C29 /* SmartCart.swift */; };
 		B42667D91CF6AC6A00D21489 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42667D81CF6AC6A00D21489 /* CustomUITableViewCell.swift */; };
+		B44207B81D0595DB00F8D9BC /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44207B71D0595DB00F8D9BC /* TitleCell.swift */; };
+		B44207BA1D05AA8400F8D9BC /* AisleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44207B91D05AA8400F8D9BC /* AisleCell.swift */; };
 		B49E807B1CF1A3580055E130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E807A1CF1A3580055E130 /* AppDelegate.swift */; };
 		B49E807D1CF1A3580055E130 /* SmartCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */; };
 		B49E80821CF1A3580055E130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49E80811CF1A3580055E130 /* Assets.xcassets */; };
 		B49E80851CF1A3580055E130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49E80831CF1A3580055E130 /* LaunchScreen.storyboard */; };
 		B49E809B1CF1A3730055E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */; };
+		B4F9B0391D04C12900589CDC /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9B0381D04C12900589CDC /* ProductDetailViewController.swift */; };
 		B4FBA98E1D048BD50014B174 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FBA98D1D048BD50014B174 /* CheckoutController.swift */; };
 		DF65DC25ACA185BD5C8D7D16 /* Pods_Smart_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB548670292EA7D38E9659C /* Pods_Smart_Shopping.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,8 @@
 		B420FFA81D042E3A00DE1C29 /* SmartListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartListViewController.swift; sourceTree = "<group>"; };
 		B420FFAA1D04506600DE1C29 /* SmartCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartCart.swift; sourceTree = "<group>"; };
 		B42667D81CF6AC6A00D21489 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
+		B44207B71D0595DB00F8D9BC /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		B44207B91D05AA8400F8D9BC /* AisleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AisleCell.swift; sourceTree = "<group>"; };
 		B49E80771CF1A3580055E130 /* Smart Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49E807A1CF1A3580055E130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCartViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		B49E808F1CF1A3580055E130 /* Smart_ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_ShoppingTests.swift; sourceTree = "<group>"; };
 		B49E80911CF1A3580055E130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49E809A1CF1A3730055E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4F9B0381D04C12900589CDC /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		B4FBA98D1D048BD50014B174 /* CheckoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
 		B4FBA98F1D0496D50014B174 /* Smart Shopping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Smart Shopping.entitlements"; sourceTree = "<group>"; };
 		DCB2E824D2730D990C9499D1 /* Pods-Smart Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Shopping/Pods-Smart Shopping.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 				B420FFA11D02CEEE00DE1C29 /* Main.storyboard */,
 				B420FF931D01EC9800DE1C29 /* SearchTableCell.swift */,
 				B420FF9B1D029A5E00DE1C29 /* ProductCell.swift */,
+				B44207B71D0595DB00F8D9BC /* TitleCell.swift */,
+				B44207B91D05AA8400F8D9BC /* AisleCell.swift */,
 			);
 			name = Vjews;
 			path = Views;
@@ -108,6 +116,7 @@
 				B420FF911D01EA7E00DE1C29 /* SearchViewController.swift */,
 				B49E807C1CF1A3580055E130 /* SmartCartViewController.swift */,
 				B4FBA98D1D048BD50014B174 /* CheckoutController.swift */,
+				B4F9B0381D04C12900589CDC /* ProductDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,9 +339,12 @@
 				B4FBA98E1D048BD50014B174 /* CheckoutController.swift in Sources */,
 				B49E807B1CF1A3580055E130 /* AppDelegate.swift in Sources */,
 				B420FF941D01EC9800DE1C29 /* SearchTableCell.swift in Sources */,
+				B44207BA1D05AA8400F8D9BC /* AisleCell.swift in Sources */,
 				B420FFAB1D04506600DE1C29 /* SmartCart.swift in Sources */,
+				B4F9B0391D04C12900589CDC /* ProductDetailViewController.swift in Sources */,
 				B42667D91CF6AC6A00D21489 /* CustomUITableViewCell.swift in Sources */,
 				B420FF8C1D01DF9D00DE1C29 /* BaseItem.swift in Sources */,
+				B44207B81D0595DB00F8D9BC /* TitleCell.swift in Sources */,
 				B420FF9A1D02350A00DE1C29 /* ProductsCache.swift in Sources */,
 				B420FF901D01E09600DE1C29 /* WalmartAPI.swift in Sources */,
 			);

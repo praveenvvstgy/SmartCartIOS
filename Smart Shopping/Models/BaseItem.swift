@@ -15,8 +15,10 @@ struct BaseItem {
     let salePrice: Double?
     let upc: String?
     let categoryPath: String?
+    let shortDescription: String?
     let longDescription: String?
     let thumbnailImage: String?
+    let mediumImage: String?
     
     init(json: JSON) {
         print(json)
@@ -26,7 +28,9 @@ struct BaseItem {
         salePrice = json["salePrice"].double
         upc = json["upc"].string
         categoryPath = json["categoryPath"].string
+        shortDescription = json["shortDescription"].string
         longDescription = json["longDescription"].string
         thumbnailImage = json["thumbnailImage"].string
+        mediumImage = json["mediumImage"].string
     }
 }

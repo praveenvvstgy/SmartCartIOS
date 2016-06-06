@@ -15,10 +15,6 @@ target 'Smart Shopping' do
   pod 'FoldingTabBar', '~> 1.0.2'
   pod 'SwiftGifOrigin'
   pod 'Braintree'
-  
-  target 'Smart ShoppingTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'MDHTMLLabel'
 
 end

@@ -101,6 +101,16 @@ extension SmartListViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showProduct" {
+            if let destinationViewController = segue.destinationViewController as? ProductDetailViewController {
+                if let cell = sender as? UITableViewCell, let indexPath = smartListTable.indexPathForCell(cell) {
+                    destinationViewController.product = localSmartListItems[indexPath.row]
+                }
+            }
+        }
+    }
 }
 
 //MARK: UITableViewDelegate
@@ -120,9 +130,6 @@ extension SmartListViewController: UITableViewDelegate {
         }
     }
     
-    func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
 }
 
 //MARK: DZNEmptyDataSetSource

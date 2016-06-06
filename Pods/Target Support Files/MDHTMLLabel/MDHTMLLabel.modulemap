@@ -1,0 +1,6 @@
+framework module MDHTMLLabel {
+  umbrella header "MDHTMLLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
