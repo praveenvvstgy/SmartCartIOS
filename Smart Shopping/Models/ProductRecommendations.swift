@@ -49,7 +49,7 @@ class ProductRecommendations {
                             let itemIds = products.map({ (item) -> Int in
                                 return item.itemId!
                             })
-                            self.items = Set(itemIds)
+                            self.items = self.items.union(itemIds)
                             NSNotificationCenter.defaultCenter().postNotificationName("recommendationsRefreshed", object: nil)
                         }
                     }

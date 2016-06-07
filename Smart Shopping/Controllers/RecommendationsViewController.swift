@@ -110,19 +110,20 @@ extension RecommendationsViewController: DZNEmptyDataSetSource {
     }
     
     func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
-        let attributes = [NSForegroundColorAttributeName: ContrastColorOf(FlatWatermelonDark(), returnFlat: true)]
+        let attributes = [NSForegroundColorAttributeName: ContrastColorOf(FlatPowderBlue(), returnFlat: true)]
         return NSAttributedString(string: "Your Smart Cart is Empty, Add Products to get Recommendations", attributes: attributes)
     }
     
     func backgroundColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
-        return FlatWatermelonDark()
+        return FlatPowderBlue()
     }
     
     func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
         return UIImage(named: "add-big")
     }
     
+    
     func imageTintColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
-        return ContrastColorOf(FlatWatermelonDark(), returnFlat: true)
+        return ContrastColorOf(FlatPowderBlue(), returnFlat: true)
     }
 }
