@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import FoldingTabBar
+import Whisper
 
 class SmartCartViewController: UIViewController {
 
@@ -147,7 +148,15 @@ extension SmartCartViewController: UITableViewDelegate {
 //MARK: YALTabBarInteracting
 extension SmartCartViewController: YALTabBarInteracting {
     func extraLeftItemDidPress() {
-        
+        Calm()
+        if let itemId = productRecommendations.items.randomElement() {
+            if let product = productsCache.getCachedProductForItemId(itemId) {
+                if let name = product.name, salePrice = product.salePrice {
+                    let murmur = Murmur(title: "Sale!! \(name), 20% off at \(salePrice)")
+                    Whistle(murmur, action: .Present)
+                }
+            }
+        }
     }
     
     func extraRightItemDidPress() {
@@ -155,5 +164,11 @@ extension SmartCartViewController: YALTabBarInteracting {
         let checkoutCounter = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CheckoutViewController")
         checkoutCounter.modalPresentationStyle = .FullScreen
         presentViewController(checkoutCounter, animated: true, completion: nil)
+    }
+}
+
+extension Set {
+    func randomElement() -> Element? {
+        return count == 0 ? nil : self[self.startIndex.advancedBy(Int(arc4random()) % count)]
     }
 }

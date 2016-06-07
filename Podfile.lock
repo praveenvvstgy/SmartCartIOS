@@ -54,6 +54,7 @@ PODS:
   - Siesta/Core (1.0-beta.6)
   - SwiftGifOrigin (1.5.3)
   - SwiftyJSON (2.3.2)
+  - Whisper (3.0.0)
 
 DEPENDENCIES:
   - Braintree
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - Siesta (>= 1.0-beta.6)
   - SwiftGifOrigin
   - SwiftyJSON
+  - Whisper
 
 SPEC CHECKSUMS:
   Braintree: 817c38f759315a6aaa0c5884dc9f1969a61f802f
@@ -83,7 +85,8 @@ SPEC CHECKSUMS:
   Siesta: 353fba713b4ce9112c26f6b5038ccebeb897f60b
   SwiftGifOrigin: 893ebcceabe215a00b607328b5322b4e228347e5
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Whisper: 42a3ee7c2936f861b23d41bd6cd7dfd22f102405
 
-PODFILE CHECKSUM: f68dfb99c295c41ec2aeadef52e1a0a46c585009
+PODFILE CHECKSUM: 25d459e1bad1b215118682c8a08670ed43dc94e3
 
 COCOAPODS: 1.0.1

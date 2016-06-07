@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     override init() {
         FIRApp.configure()
         print("There are \(shoppingList.count()) items in shopping List")
+        print("There are \(productRecommendations.items.count) recommendations")
     }
 
 
@@ -38,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.leftBarItems = [searchItem, listItem]
         
         let cartItem = YALTabBarItem(itemImage: UIImage(named: "cart"), leftItemImage: UIImage(named: "recommend"), rightItemImage: UIImage(named: "checkout"))
-        tabBarController.rightBarItems = [cartItem]
+        let recommendItem = YALTabBarItem(itemImage: UIImage(named: "recommend"), leftItemImage: nil, rightItemImage: nil)
+        tabBarController.rightBarItems = [cartItem, recommendItem]
         
         tabBarController.centerButtonImage = UIImage(named: "menu")
         tabBarController.tabBarView.tintColor = FlatWhite()

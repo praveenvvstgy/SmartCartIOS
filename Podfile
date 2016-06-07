@@ -16,5 +16,6 @@ target 'Smart Shopping' do
   pod 'SwiftGifOrigin'
   pod 'Braintree'
   pod 'MDHTMLLabel'
+  pod 'Whisper'
 
 end

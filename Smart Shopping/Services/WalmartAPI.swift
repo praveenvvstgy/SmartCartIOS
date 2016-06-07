@@ -24,6 +24,9 @@ class WalmartAPI: Service {
         super.configureTransformer("/items") {
             ($0.content as JSON)["items"].arrayValue.map(BaseItem.init)
         }
+        super.configureTransformer("/postbrowse") {
+            ($0.content as JSON).arrayValue.map(BaseItem.init)
+        }
     }
     
     func search(query: String) -> Resource {
@@ -32,6 +35,10 @@ class WalmartAPI: Service {
     
     func products(products: [Int]) -> Resource {
         return resource("items").withParam("ids", products.map(String.init).joinWithSeparator(",")).withParam("apiKey", "gz4dz34xf3bjbtwmbqgj3kg7")
+    }
+    
+    func recommendations(product: Int) -> Resource {
+        return resource("postbrowse").withParam("itemId", String(product)).withParam("apiKey", "gz4dz34xf3bjbtwmbqgj3kg7")
     }
 }
 

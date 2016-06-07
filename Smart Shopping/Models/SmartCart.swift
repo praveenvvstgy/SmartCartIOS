@@ -12,6 +12,7 @@ import FirebaseDatabase
 class SmartCart {
     var items = Set<Int>() {
         didSet {
+            self.lastInsertedItem = Array(items).last
             var itemsToBeFetched = Array(items.subtract(productsCache.getItemIdsInCache()))
             if itemsToBeFetched.count > 0 {
                 if itemsToBeFetched.count > 20 {
@@ -30,6 +31,11 @@ class SmartCart {
             }
         }
 
+    }
+    var lastInsertedItem: Int? {
+        didSet {
+            NSNotificationCenter.defaultCenter().postNotificationName("fetchRecommendation", object: nil)
+        }
     }
     let databaseRef = FIRDatabase.database().reference()
     
